@@ -1,9 +1,16 @@
 import React from 'react';
-import Menu from './components/menu';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Filter from './components/filter.js';
+import Sort from './components/sort.js';
+import allEmployees from './components/employees.js';
 
 function App() {
   return (
-    <Menu />
+    <Router>
+      <allEmployees />
+      <Route exact path='/filter' component={Filter} />
+      <Route exact path='/sort' component={Sort} />
+    </Router>
   );
 }
 

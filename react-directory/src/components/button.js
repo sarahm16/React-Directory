@@ -2,7 +2,7 @@ import React from 'react';
 
 function Button(props) {
     return (
-        <button onClick={props.handleBtnClick}>{props.task}</button>
+        <a href={props.page}><button onClick={props.handleBtnClick}>{props.task}</button></a>
     )
 
 }
