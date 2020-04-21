@@ -7,7 +7,7 @@ import allEmployees from './components/employees.js';
 function App() {
   return (
     <Router>
-      <allEmployees />
+      <Route exact path='/' component={allEmployees} />
       <Route exact path='/filter' component={Filter} />
       <Route exact path='/sort' component={Sort} />
     </Router>
