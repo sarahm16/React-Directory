@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import renderEmployees from './employeeList';
+import renderEmployees from './renderEmployees';
 
 
 class Table extends Component {

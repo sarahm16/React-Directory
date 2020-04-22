@@ -1,8 +1,3 @@
-//import sort function
-//import filter function
-
-//import compare from './sort';
-
 let employeeList =  [
     { id: 1, name: 'Wasif', age: 21, email: 'wasif@email.com' },
     { id: 2, name: 'Ali', age: 19, email: 'ali@email.com' },
@@ -24,16 +19,7 @@ function compare(a, b) {
     return comparison;
 }
 
-function renderEmployees(task) {
-    switch (task) {
-        case 'sort':
-            return employeeList.sort(compare)
-        case 'all':
-            return employeeList
-    }
-}
-
-export default renderEmployees;
+export default employeeList;
 
 //function (props.page)
 //switch (sorted or filtered)

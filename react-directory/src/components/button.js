@@ -1,8 +1,9 @@
 import React from 'react';
+import renderEmployees from './renderEmployees.js';
 
 function Button(props) {
     return (
-        <a href={props.page}><button>{props.task}</button></a>
+        <button onClick={() => renderEmployees(props.page)}>{props.task}</button>
     )
 
 }
