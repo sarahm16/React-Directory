@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Filter from './components/filter.js';
 import Sort from './components/sort.js';
-import allEmployees from './components/employees.js';
+import allEmployees from './components/employeeContainer.js';
 
 function App() {
   return (

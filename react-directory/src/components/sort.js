@@ -1,8 +1,10 @@
 import React from 'react';
+//import employeeList from './employeeList';
+import Table from './table';
 
 function Sort() {
     return (
-        <h2>You've reached the sorted page!</h2>
+        <Table page='sort'/>
     )
 }
 

@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
-import employeeList from './employeeList';
+import renderEmployees from './employeeList';
+
 
 class Table extends Component {
     constructor(props) {
-       super(props) //since we are extending class Table so we have to use super in order to override Component class constructor
-       this.state = {
+        let employeeList = renderEmployees(props.page);
+        super(props) //since we are extending class Table so we have to use super in order to override Component class constructor
+        this.state = {
            employees: employeeList
        };
     }
@@ -26,7 +28,7 @@ class Table extends Component {
     render() {
         return (
            <div>
-              <h1 id='title'>React Dynamic Table</h1>
+              <h1 id='title'>Here are all of your employees</h1>
               <table id='students'>
                  <tbody>
                     {this.renderTableData()}
