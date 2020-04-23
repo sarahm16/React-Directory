@@ -11,13 +11,13 @@ class Table extends Component {
     renderTableData() {
         console.log('rendering')
         return this.state.employees.map((employee, index) => {
-           const { id, name, age, email } = employee //destructuring
+           const { id, name, email, department } = employee //destructuring
            return (
               <tr key={id}>
                  <td>{id}</td>
                  <td>{name}</td>
-                 <td>{age}</td>
                  <td>{email}</td>
+                 <td>{department}</td>
               </tr>
            )
         })
@@ -27,7 +27,7 @@ class Table extends Component {
         return (
            <div>
               <h1 id='title'>Here are all of your employees</h1>
-              <table id='students'>
+              <table id='employees'>
                  <tbody>
                     {this.renderTableData()}
                  </tbody>

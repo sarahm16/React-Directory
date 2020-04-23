@@ -9,7 +9,7 @@ function Employees() {
             <Table employees={employeeList}/>
             {/* {renderTable()}; */}
             <div className='buttons'>
-                <Button task="Filter Employees by Name" page='filter'/><br />
+                <Button task="Filter Employees by Department" page='filter'/><br />
                 <Button task="Sort Employees A-Z" page='sort' /><br />
             </div>
         </div>
