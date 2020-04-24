@@ -4,7 +4,7 @@ import employeeList from './employeeList';
 function RenderDepartmentsArray() {
     let departments=[];
     for(let i=0; i<employeeList.length; i++) {
-        if(departments.indexOf(employeeList[i].department) == -1) {
+        if(departments.indexOf(employeeList[i].department) === -1) {
             departments.push(employeeList[i].department)
         }
     }
