@@ -2,6 +2,9 @@ import React from 'react';
 import Button from './button';
 import Table from './table';
 import employeeList from './employeeList';
+import RenderDepartmentsArray from './filter';
+
+let departments = RenderDepartmentsArray();
 
 function Employees() {
     return(
@@ -9,7 +12,23 @@ function Employees() {
             <Table employees={employeeList}/>
             {/* {renderTable()}; */}
             <div className='buttons'>
-                <Button task="Filter Employees by Department" page='filter'/><br />
+                <div className="dropdown">
+                    <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Filter Employees by Department
+                    </button>
+                    {/* <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a className="dropdown-item" href="#">Action</a>
+                        <a className="dropdown-item" href="#">Another action</a>
+                        <a className="dropdown-item" href="#">Something else here</a>
+                    </div> */}
+                </div>
+                <div>
+                    <ul>
+                        {departments.map(department => (
+                            <li><Button task={department}></Button></li>
+                        ))}
+                    </ul>
+                </div>               
                 <Button task="Sort Employees A-Z" page='sort' /><br />
             </div>
         </div>
