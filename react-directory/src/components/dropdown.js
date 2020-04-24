@@ -1,5 +1,6 @@
 import React from 'react';
 import RenderDepartmentsArray from './departmentsArray';
+import Filter from './filter';
 
 let departments = RenderDepartmentsArray();
 
@@ -11,7 +12,7 @@ function Dropdown() {
             </button>
             <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 {departments.map(department => (
-                    <a className='dropdown-item' href={`/filter/${department}`}>{department}</a>
+                    <a className='dropdown-item' onClick={() => Filter(department)}>{department}</a>
                 ))}
             </div>
         </div>
