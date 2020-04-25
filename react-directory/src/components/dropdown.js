@@ -1,6 +1,6 @@
 import React from 'react';
 import RenderDepartmentsArray from './departmentsArray';
-import Filter from './filter';
+//import Filter from './filter';
 
 let departments = RenderDepartmentsArray();
 

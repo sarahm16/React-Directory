@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './styles.css';
 
     class Table extends Component {
         constructor(props) {
@@ -14,7 +15,6 @@ import React, {Component} from 'react';
                const { id, name, email, department } = employee //destructuring
                return (
                   <tr key={id}>
-                     <td>{id}</td>
                      <td>{name}</td>
                      <td>{email}</td>
                      <td>{department}</td>
@@ -26,7 +26,7 @@ import React, {Component} from 'react';
         render() {
             return (
                <div>
-                  <h1 id='title'>Here are all of your employees</h1>
+                  <h1 id='title'>Employee Roster</h1>
                   <table id='employees'>
                      <tbody>
                         {this.renderTableData()}

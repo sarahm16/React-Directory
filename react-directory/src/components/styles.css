@@ -1,0 +1,21 @@
+#employees {
+    margin: 0 auto;
+    border: solid 1px black;
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#title {
+    text-align: center
+}
+
+#sort {
+    float: left;
+    margin-right: 10px;
+}
+
+.buttons {
+    text-align: center;
+    float: left;
+}
