@@ -1,19 +1,28 @@
-import React from 'react';
-import Button from './button';
-import Table from './table';
+import React, { Component } from 'react';
 import employeeList from './employeeList';
-import Dropdown from './dropdown'
+import Table from './renderTable';
+import compare from './sort';
+//import Button from './button';
 
-function Employees() {
-    return(
-        <div>
-            <Table employees={employeeList}/>
-            <div className='buttons'>
-                <Dropdown />
-                <Button title="Sort Employees A-Z" page='sort' /><br />
+class EmployeeContainer extends Component {
+    state = {
+        employees: employeeList
+    }
+
+    handleSortBtn = event => {
+        this.setState({
+            employees: employeeList.sort(compare)
+        })
+    }
+
+    render() {
+        return(
+            <div>
+                <Table employees={this.state.employees} />
+                <button onClick={this.handleSortBtn}>Sort</button>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
-export default Employees;
+export default EmployeeContainer;

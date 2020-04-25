@@ -1,12 +1,15 @@
-import employeeList from './employeeList';
-import React from 'react';
-import Table from './table';
-import compare from './compare';
+function compare(a, b) {
+    // Use toUpperCase() to ignore character casing
+    const nameA = a.name.toUpperCase();
+    const nameB = b.name.toUpperCase();
 
-function Sort() {
-    return(
-        <Table employees={employeeList.sort(compare)}></Table>
-    )
+    let comparison = 0;
+    if (nameA > nameB) {
+        comparison = 1;
+    } else if (nameA < nameB) {
+        comparison = -1;
+    }
+    return comparison;
 }
 
-export default Sort;
+export default compare;
