@@ -26,7 +26,7 @@ import './styles.css';
         render() {
             return (
                <div>
-                  <h1 id='title'>Employee Roster</h1>
+                  <hr />
                   <table id='employees'>
                      <tbody>
                         {this.renderTableData()}

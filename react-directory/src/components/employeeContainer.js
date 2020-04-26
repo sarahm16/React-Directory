@@ -4,6 +4,7 @@ import Table from './renderTable';
 import compare from './sort';
 import Dropdown from './dropdown';
 import RenderDepartmentsArray from './departmentsArray';
+import Title from './title';
 
 let departments = RenderDepartmentsArray();
 
@@ -28,25 +29,17 @@ class EmployeeContainer extends Component {
         employeeList.splice(filtered.length, employeeList.length-filtered.length)
         
         this.setState({
-            employees: employeeList
+            
         })
     }
 
     render() {
         return(
             <div>
+                <Title />
                 <Table employees={this.state.employees} />
-                    <button onClick={this.handleSortBtn} className='btn btn-secondary'>Sort Employees A-Z</button>
-                    <div className="dropdown">
-                        <button className="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-                            Filter by Department
-                        </button>
-                        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            {departments.map(department => (
-                                <button value={department} className='dropdown-item' onClick={this.handleFilterBtn}>{department}</button>
-                            ))}
-                        </div>
-                    </div>                    
+                <button onClick={this.handleSortBtn} className='btn btn-secondary'>Sort Employees A-Z</button>
+                <Dropdown handleFilterBtn={this.handleFilterBtn}/>                
             </div>
         )
     }
