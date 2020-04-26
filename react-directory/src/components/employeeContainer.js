@@ -6,8 +6,6 @@ import Dropdown from './dropdown';
 import RenderDepartmentsArray from './departmentsArray';
 import Title from './title';
 
-let departments = RenderDepartmentsArray();
-
 class EmployeeContainer extends Component {
     state = {
         employees: employeeList
@@ -33,10 +31,8 @@ class EmployeeContainer extends Component {
             employeeList[i] = filtered[i]
         }
         employeeList.splice(filtered.length, employeeList.length-filtered.length)
-        
-        this.setState({
-            
-        })
+
+        this.setState({})
     }
 
     render() {
@@ -46,7 +42,8 @@ class EmployeeContainer extends Component {
                 <Table employees={this.state.employees} />
                 <div className='buttons'>
                     <button onClick={this.handleSortBtn} className='btn btn-secondary'>Sort Employees A-Z</button>
-                    <Dropdown handleFilterBtn={this.handleFilterBtn}/>
+                    <Dropdown list='department' handleFilterBtn={this.handleFilterBtn}/>
+                    <Dropdown list='role' handleFilterBtn={this.handleFilterBtn}/>
                 </div>        
             </div>
         )

@@ -1,14 +1,14 @@
 import employeeList from './employeeList';
 
 //puts all unique departments into an array
-function RenderDepartmentsArray() {
-    let departments=['View all Employees'];
+function RenderArray(item) {
+    let array=[];
     for(let i=0; i<employeeList.length; i++) {
-        if(departments.indexOf(employeeList[i].department) === -1) {
-            departments.push(employeeList[i].department)
+        if(array.indexOf(employeeList[i][item]) === -1) {
+            array.push(employeeList[i][item])
         }
     }
-    return departments;
+    return array;
 }
 
-export default RenderDepartmentsArray;
+export default RenderArray;

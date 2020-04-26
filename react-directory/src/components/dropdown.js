@@ -1,17 +1,19 @@
 import React from 'react';
-import RenderDepartmentsArray from './departmentsArray';
+import RenderArray from './departmentsArray';
 import './styles.css';
 
 function Dropdown(props) {
-    let departments = RenderDepartmentsArray();
+    console.log(props.list)
+    let array = RenderArray(props.list);
+    console.log(array)
     return (
         <div className="dropdown">
             <button className="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-                Filter by Department
+                Filter by {props.list}
             </button>
             <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                {departments.map(department => (
-                    <button value={department} className='dropdown-item' onClick={props.handleFilterBtn}>{department}</button>
+                {array.map(item => (
+                    <button value={item} className='dropdown-item' onClick={props.handleFilterBtn}>{item}</button>
                 ))}
             </div>
         </div>
