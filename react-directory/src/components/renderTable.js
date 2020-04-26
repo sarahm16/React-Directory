@@ -12,11 +12,12 @@ import './styles.css';
         renderTableData() {
             console.log('rendering')
             return this.state.employees.map((employee, index) => {
-               const { id, name, email, department } = employee //destructuring
+               const { id, name, email, role, department } = employee //destructuring
                return (
                   <tr key={id}>
                      <td>{name}</td>
                      <td>{email}</td>
+                     <td>{role}</td>
                      <td>{department}</td>
                   </tr>
                )
@@ -28,6 +29,12 @@ import './styles.css';
                <div>
                   <hr />
                   <table id='employees'>
+                     <thead id='table-header'>
+                        <td>Name</td>
+                        <td>Email</td>
+                        <td>Role</td>
+                        <td>Department</td>
+                     </thead>
                      <tbody>
                         {this.renderTableData()}
                      </tbody>

@@ -11,6 +11,11 @@ td {
     border: solid 1px black
 }
 
+#table-header {
+    text-align: center;
+    font-weight: bold;
+}
+
 #header {
     text-align: center;
 }
