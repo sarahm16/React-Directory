@@ -20,6 +20,12 @@ class EmployeeContainer extends Component {
         console.log(this.state.employees)
     }
 
+    viewAll = () => {
+        this.setState({
+            employees: employeeList
+        })
+    }
+
     handleFilterBtn = event => {
         let dep = event.target.value;
         let filtered = employeeList.filter(e => e.department.includes(dep));
@@ -38,8 +44,10 @@ class EmployeeContainer extends Component {
             <div>
                 <Title />
                 <Table employees={this.state.employees} />
-                <button onClick={this.handleSortBtn} className='btn btn-secondary'>Sort Employees A-Z</button>
-                <Dropdown handleFilterBtn={this.handleFilterBtn}/>                
+                <div className='buttons'>
+                    <button onClick={this.handleSortBtn} className='btn btn-secondary'>Sort Employees A-Z</button>
+                    <Dropdown handleFilterBtn={this.handleFilterBtn}/>
+                </div>        
             </div>
         )
     }

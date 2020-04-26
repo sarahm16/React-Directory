@@ -1,9 +1,9 @@
 import React from 'react';
 import RenderDepartmentsArray from './departmentsArray';
-
-let departments = RenderDepartmentsArray();
+import './styles.css';
 
 function Dropdown(props) {
+    let departments = RenderDepartmentsArray();
     return (
         <div className="dropdown">
             <button className="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
