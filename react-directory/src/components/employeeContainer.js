@@ -25,8 +25,8 @@ class EmployeeContainer extends Component {
     }
 
     handleFilterBtn = event => {
-        let dep = event.target.value;
-        let filtered = employeeList.filter(e => e.department.includes(dep));
+        let item = event.target.value;
+        let filtered = employeeList.filter(e => e[event.target.name].includes(item));
         for(let i=0; i<filtered.length; i++) {
             employeeList[i] = filtered[i]
         }

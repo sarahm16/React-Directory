@@ -5,7 +5,6 @@ import './styles.css';
 function Dropdown(props) {
     console.log(props.list)
     let array = RenderArray(props.list);
-    console.log(array)
     return (
         <div className="dropdown">
             <button className="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
@@ -13,7 +12,7 @@ function Dropdown(props) {
             </button>
             <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 {array.map(item => (
-                    <button value={item} className='dropdown-item' onClick={props.handleFilterBtn}>{item}</button>
+                    <button value={item} name={props.list} className='dropdown-item' onClick={props.handleFilterBtn}>{item}</button>
                 ))}
             </div>
         </div>
