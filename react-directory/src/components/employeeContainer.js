@@ -3,7 +3,6 @@ import employeeList from './employeeList';
 import Table from './renderTable';
 import compare from './sort';
 import Dropdown from './dropdown';
-import RenderDepartmentsArray from './departmentsArray';
 import Title from './title';
 
 class EmployeeContainer extends Component {
@@ -11,16 +10,16 @@ class EmployeeContainer extends Component {
         employees: employeeList
     }
 
-    handleSortBtn = event => {
+    // componentDidMount() {
+    //     console.log(employeeList)
+    //     this.setState({
+    //         employees: employeeList
+    //     })
+    // }
+
+    handleSortBtn = () => {
         this.setState({
             employees: employeeList.sort(compare)
-        })
-        console.log(this.state.employees)
-    }
-
-    viewAll = () => {
-        this.setState({
-            employees: employeeList
         })
     }
 
@@ -41,7 +40,7 @@ class EmployeeContainer extends Component {
                 <Title />
                 <Table employees={this.state.employees} />
                 <div className='buttons'>
-                    <button onClick={this.handleSortBtn} className='btn btn-secondary'>Sort Employees A-Z</button>
+                    <button onClick={this.handleSortBtn} className='btn btn-secondary'>Sort A-Z</button>
                     <Dropdown list='department' handleFilterBtn={this.handleFilterBtn}/>
                     <Dropdown list='role' handleFilterBtn={this.handleFilterBtn}/>
                 </div>        

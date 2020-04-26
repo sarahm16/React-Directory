@@ -3,7 +3,6 @@ import RenderArray from './departmentsArray';
 import './styles.css';
 
 function Dropdown(props) {
-    console.log(props.list)
     let array = RenderArray(props.list);
     return (
         <div className="dropdown">
