@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-directory/static/css/main.0a450555.chunk.css",
-    "main.js": "/react-directory/static/js/main.9c0a317c.chunk.js",
-    "main.js.map": "/react-directory/static/js/main.9c0a317c.chunk.js.map",
-    "runtime-main.js": "/react-directory/static/js/runtime-main.a11737cd.js",
-    "runtime-main.js.map": "/react-directory/static/js/runtime-main.a11737cd.js.map",
-    "static/js/2.d052b199.chunk.js": "/react-directory/static/js/2.d052b199.chunk.js",
-    "static/js/2.d052b199.chunk.js.map": "/react-directory/static/js/2.d052b199.chunk.js.map",
-    "index.html": "/react-directory/index.html",
-    "precache-manifest.65d3ca7b26399ddfb3a1ccb2a2fcd5f3.js": "/react-directory/precache-manifest.65d3ca7b26399ddfb3a1ccb2a2fcd5f3.js",
-    "service-worker.js": "/react-directory/service-worker.js",
-    "static/css/main.0a450555.chunk.css.map": "/react-directory/static/css/main.0a450555.chunk.css.map",
-    "static/js/2.d052b199.chunk.js.LICENSE.txt": "/react-directory/static/js/2.d052b199.chunk.js.LICENSE.txt",
-    "static/media/styles.css": "/react-directory/static/media/waves.a102e7a3.jpg"
+    "main.css": "/React-Directory/static/css/main.3b64624c.chunk.css",
+    "main.js": "/React-Directory/static/js/main.e56026dc.chunk.js",
+    "main.js.map": "/React-Directory/static/js/main.e56026dc.chunk.js.map",
+    "runtime-main.js": "/React-Directory/static/js/runtime-main.939dff10.js",
+    "runtime-main.js.map": "/React-Directory/static/js/runtime-main.939dff10.js.map",
+    "static/js/2.d052b199.chunk.js": "/React-Directory/static/js/2.d052b199.chunk.js",
+    "static/js/2.d052b199.chunk.js.map": "/React-Directory/static/js/2.d052b199.chunk.js.map",
+    "index.html": "/React-Directory/index.html",
+    "precache-manifest.dd51dac2eddbc734195f60123e96a8f8.js": "/React-Directory/precache-manifest.dd51dac2eddbc734195f60123e96a8f8.js",
+    "service-worker.js": "/React-Directory/service-worker.js",
+    "static/css/main.3b64624c.chunk.css.map": "/React-Directory/static/css/main.3b64624c.chunk.css.map",
+    "static/js/2.d052b199.chunk.js.LICENSE.txt": "/React-Directory/static/js/2.d052b199.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/React-Directory/static/media/waves.a102e7a3.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a11737cd.js",
+    "static/js/runtime-main.939dff10.js",
     "static/js/2.d052b199.chunk.js",
-    "static/css/main.0a450555.chunk.css",
-    "static/js/main.9c0a317c.chunk.js"
+    "static/css/main.3b64624c.chunk.css",
+    "static/js/main.e56026dc.chunk.js"
   ]
 }
