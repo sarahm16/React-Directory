@@ -4,7 +4,8 @@ import './styles.css'
 function Title() {
     return(
         <div id='header'>
-            <h2>Employee Roster</h2>
+            <h1>Employee Roster</h1>
+            <i class="fas fa-globe-americas"></i>
         </div>
     )
 }

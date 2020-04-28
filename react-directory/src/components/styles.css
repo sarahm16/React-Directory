@@ -1,9 +1,31 @@
+body {
+    background-image: url("../components/waves.jpg");
+    background-size: 100%;
+}
+
 #employees {
     margin: 0 auto;
     border: solid 1px black;
     width: 50%;
     margin-top: 30px;
     margin-bottom: 30px;
+    background-color: white;
+}
+
+#header {
+    background-color:rgb(17, 13, 80);
+    color: white;
+    padding: 15px;
+    border-bottom: solid 3px rgb(68, 127, 214);
+}
+
+hr {
+    font-weight: bold;
+}
+
+.btn {
+    background-color: lightgray;
+    color: navy;
 }
 
 td {
